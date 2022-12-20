@@ -108,7 +108,7 @@ h3 {
 }
 
 .font-subheading {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     overflow: hidden;
@@ -524,6 +524,15 @@ button::-moz-focus-inner {
     transition-delay: 0;
 }
 
+@keyframes myRotate{
+  0%{ -webkit-transform: rotate(0deg);}
+  50%{ -webkit-transform: rotate(180deg);}
+  100%{ -webkit-transform: rotate(360deg);}
+}
+
+#about .animate-rotate {
+  animation: myRotate 8s linear infinite;
+}
 #about .logo {
     --icon-size: 96px;
 }
@@ -698,8 +707,9 @@ body {
 
 /* Dark theme colors */
 body.dark-theme {
-    --text-color: #eee;
-    --bg-color: #121212;
+    /* --text-color: #eee; */
+    --text-color: #F7DE89;
+    --bg-color: #121C2F;
     --bg-color-secondary: #333;
 }
 

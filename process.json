@@ -1,0 +1,6 @@
+{
+  "apps": [{
+    "name": "Snapdrop",
+    "script": "node ./index.js"
+  }]
+}

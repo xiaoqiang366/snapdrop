@@ -41,7 +41,8 @@ function getName(seed) {
     var familyName = familyNames[Math.seededRandom(100, 0)];
     var midName = midNames[Math.seededRandom(8, 0)];
     var givenName = givenNames[Math.seededRandom(8, 0)];
-    var fullName = familyName + midName + givenName;
+    // var fullName = familyName + midName + givenName;
+    var fullName = familyName + midName;
     if (fullName && fullName.length < 2) fullName = '武大郎';
 
     return fullName;
